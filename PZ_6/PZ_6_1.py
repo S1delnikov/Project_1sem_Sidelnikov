@@ -12,7 +12,7 @@ if n == 1:
 elif n == 2:
     N = []
     for x in range(2):
-        N.append(random.randint(1, n)
+        N.append(random.randint(1, n))
     print('Среднее арифметическое элементов списка с номерами от K до L включительно: ', sum(N)/2)
 elif n > 2 :
     N = []
