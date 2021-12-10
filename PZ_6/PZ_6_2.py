@@ -21,7 +21,7 @@ pz()
 '''
 
 import random
-n = 100
+n = 10
 while type(n) != int:
     try:
         n = int(n)
@@ -30,7 +30,7 @@ while type(n) != int:
 k = 1
 N = []
 while k <= n:
-        a = random.randint(0, 100)
+        a = random.randint(0, 10)
         N.append(a)
         k+=1
 print(N)
@@ -42,4 +42,8 @@ for i in N:
     if t > g:
         g = t
         s = i
-print(s, 'встречается наибольшее количество раз, а именно', t, 'раз')
+r = 0
+for i in N:
+    if s == i:
+        r+=1
+print(s, 'встречается наибольшее количество раз, а именно', r, 'раз')
