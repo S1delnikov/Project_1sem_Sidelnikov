@@ -21,7 +21,7 @@ pz()
 '''
 
 import random
-n = input('Введите размер списка: ')
+n = 100
 while type(n) != int:
     try:
         n = int(n)
