@@ -2,7 +2,6 @@
 # n = int(input())
 n = '267'
 g = ''
-k = 0
 for i in n:
     g+=chr(int(i))
 print('n: ', g)

@@ -15,6 +15,7 @@ while k<=n:
 lst.sort(reverse=True)
 lst.insert(random.randint(0, len(lst)), lst[-1])    # создаю список список из условия задачи
 lst.pop(-1)
+print('Первоначальный список:', lst)
 def rlst():    # решение задачи
     lst.sort(reverse=True)
     print(lst)
