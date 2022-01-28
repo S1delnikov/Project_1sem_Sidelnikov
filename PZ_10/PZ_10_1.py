@@ -43,3 +43,10 @@ f2.write('\n')
 print('Количество элементов: ', len(k), '\n', 'Минимальный элемент: ', min, '\n', 'Числа кратные трём: ', crat,
       '\n', 'Количество чисел кратных трём: ', crat_count, file=f2)
 f2.close()
+
+f1 = open('info.txt')
+f2 = open('info_copy.txt')
+print('Первый файл: ', '\n', f1.read())
+print('Второй файл: ', '\n', f2.read())
+f1.close()
+f2.close()
