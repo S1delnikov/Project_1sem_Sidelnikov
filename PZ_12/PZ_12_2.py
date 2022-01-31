@@ -29,7 +29,8 @@ Label(text='Поле ввода: ').grid(row=1, column=0)
 vvod = Entry(width='50')
 vvod.grid(row=1, column=1, sticky='w')
 
-Button(text='Найти уникальные элементы', command=uniq).grid(row=2, column=1, sticky='w')
+Button(text='Найти уникальные элементы', bg='#00FF00', activebackground='#ffff00',
+       command=uniq).grid(row=2, column=1, sticky='w')
 
 Label(text='Поле вывода: ').grid(row=3, column=0)
 
