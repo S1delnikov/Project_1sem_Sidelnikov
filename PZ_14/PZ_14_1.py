@@ -1,0 +1,13 @@
+import re
+
+fbi = re.compile(r'[А-ЯЁ][а-яё]+ [А-ЯЁ][,.][А-ЯЁ][,. ]|[А-ЯЁ][а-яё]+-[А-ЯЁ][а-яё]+ [А-ЯЁ][,.][А-ЯЁ][,. ]')
+with open('writer.txt', 'r', encoding='utf-8') as file:
+    text = file.read()
+    surname = re.findall(fbi, text)
+    print(f'{surname}\nКоличество фамилий: {len(surname)}')
+
+hello = re.compile(r'\b[Рр]оман\b')
+
+with open('roman.txt', 'w', encoding='utf-8') as roman:
+    roman.write(re.sub(hello, '________ПРОИЗВЕДЕНИЕ________', text))
+    print(re.sub(hello, '________ПРОИЗВЕДЕНИЕ________', text))
