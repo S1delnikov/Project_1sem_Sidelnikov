@@ -14,4 +14,4 @@ hello = re.compile(r'\b[Рр]оман\b')
 with open('roman.txt', 'w', encoding='utf-8') as roman:
     roman.write(re.sub(hello, '________ПРОИЗВЕДЕНИЕ________', text))
     print(re.sub(hello, '________ПРОИЗВЕДЕНИЕ________', text))
-    print(f"Количество замен слвоа <роман>: {list(re.subn(hello, '________ПРОИЗВЕДЕНИЕ________', text))[-1]}")
+    print(f"Количество замен слова <роман>: {list(re.subn(hello, '________ПРОИЗВЕДЕНИЕ________', text))[-1]}")
